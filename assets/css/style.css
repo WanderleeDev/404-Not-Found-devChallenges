@@ -1,0 +1,116 @@
+body{
+  display: grid;
+  padding: 1rem 2rem;
+  gap: 3rem;
+  background-color: var(--blanco);
+}
+
+.title-404{
+  font-family: 'Inconsolata', monospace;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.content-404{
+  display: grid;
+  gap: 2rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.img-404{
+  width: min(500px, 100%);
+  margin: 3rem auto;
+}
+
+.message-404{
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 71px;
+}
+
+.description-404{
+  line-height: 26px;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 2rem 0;
+}
+
+.btn-404{
+  width: 216px;
+  font-weight: 700;
+  font-size: 14px;
+  background-color: var(--negro);
+  color: var(--blanco);
+  padding: 1.5rem;
+  text-transform: uppercase;
+  margin: 3rem 0;
+  cursor: pointer;
+}
+
+.footer{
+  text-align: center;
+}
+
+.footer-info{
+  color: #bdbdbd;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer-autor{
+  color: var(--negro);
+  text-decoration: underline;
+
+}
+
+@media screen and (min-width: 700px) {
+.content-404{
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.description-404{
+  padding: initial;
+  max-width: 381px;
+}
+
+.img-404{
+  margin: initial; 
+}
+
+.message-404{
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.subcontainer{
+  display: grid;
+  gap: 2rem;
+}
+
+.footer{
+  align-self: end;
+}
+}
+
+@media screen and (min-width: 1100px){
+
+  body{
+    padding: 1rem 8rem;
+  }
+
+  .message-404{
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 94px;
+  }
+
+  .description-404{
+    font-size: 22px;
+  }
+}
