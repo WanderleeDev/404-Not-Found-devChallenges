@@ -51,6 +51,12 @@ body{
   cursor: pointer;
 }
 
+.btn-404:hover{
+  background-color: var(--blanco);
+  color: var(--negro);
+  outline: solid 1px var(--negro);
+}
+
 .footer{
   text-align: center;
 }
@@ -112,5 +118,6 @@ body{
 
   .description-404{
     font-size: 22px;
+    line-height: 2;
   }
 }
